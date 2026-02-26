@@ -87,12 +87,17 @@
             border-left: 4px solid #667eea;
             padding: 20px;
             border-radius: 8px;
-            transition: transform 0.2s;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         
         .news-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+            background: #eef0ff;
         }
         
         .news-card h3 {
@@ -122,13 +127,15 @@
             color: #999;
         }
         
-        .news-card a {
+        .news-card .external-link {
+            display: inline-block;
+            margin-top: 10px;
             color: #667eea;
-            text-decoration: none;
             font-weight: 500;
+            font-size: 13px;
         }
         
-        .news-card a:hover {
+        .news-card .external-link:hover {
             text-decoration: underline;
         }
         
@@ -277,104 +284,116 @@
                 
                 <div class="hot-news-grid">
                     <!-- 大模型/AGI -->
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25683" target="_blank" class="news-card">
                         <h3>月之暗面再获 7 亿美金融资，估值突破 120 亿美元</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">8 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25684" target="_blank" class="news-card">
                         <h3>Anthropic 推出 Claude 企业级更新，强化企业应用能力</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">6 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25672" target="_blank" class="news-card">
                         <h3>OpenAI GPT-5.3-Codex 开启 API 自由调用，400K 窗口深度重塑工程效率</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">11 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25674" target="_blank" class="news-card">
                         <h3>阿里云百炼首推"多模型自由切换"：Qwen3.5、GLM-5 等一站式集结</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">10 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
                     <!-- AI 硬件/算力 -->
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25686" target="_blank" class="news-card">
                         <h3>英伟达季度营收 680 亿美元创纪录，同比增长 73%</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">刚刚</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="#" class="news-card">
                         <h3>Meta 与 AMD 达成大规模多年期 AI 硬件协议</h3>
                         <div class="meta">
                             <span class="source">InfoQ</span>
                             <span class="time">3 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25673" target="_blank" class="news-card">
                         <h3>阿里云 Coding Plan 祭出"7.9 元全家桶"破局 Agent 成本</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">10 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
                     <!-- AI 应用/Agent -->
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25687" target="_blank" class="news-card">
                         <h3>Perplexity 发布 Computer：打破单一模型局限的通用 AI 代理</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">刚刚</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="https://www.aibase.com/zh/news/25681" target="_blank" class="news-card">
                         <h3>Salesforce 报告：九成销售团队已入局 AI 智能体</h3>
                         <div class="meta">
                             <span class="source">AIbase</span>
                             <span class="time">8 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
                     <!-- AI 技术/研究 -->
-                    <div class="news-card">
+                    <a href="#" class="news-card">
                         <h3>斯坦福 AI 实验室提出新基准'Theory of Space'，探究 AI 主动构建空间信念能力</h3>
                         <div class="meta">
                             <span class="source">InfoQ</span>
                             <span class="time">10 分钟前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="#" class="news-card">
                         <h3>李飞飞阐述空间智能是具身 AI 发展的关键要素</h3>
                         <div class="meta">
                             <span class="source">InfoQ</span>
                             <span class="time">3 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                     
-                    <div class="news-card">
+                    <a href="#" class="news-card">
                         <h3>Karpathy：AI 编码代理自去年 12 月以来已基本可用，颠覆编程工作流</h3>
                         <div class="meta">
                             <span class="source">InfoQ</span>
                             <span class="time">3 小时前</span>
                         </div>
-                    </div>
+                        <span class="external-link">🔗 阅读原文 →</span>
+                    </a>
                 </div>
             </div>
             
@@ -387,7 +406,7 @@
                 
                 <div class="deep-analysis">
                     <h3>📊 Salesforce、Adobe 股价腰斩：SaaS 真的被 AI 杀死了吗？</h3>
-                    <p><strong>来源：</strong>虎嗅网</p>
+                    <p><strong>来源：</strong><a href="https://www.huxiu.com/channel/105.html" target="_blank" style="color: #667eea;">虎嗅网</a></p>
                     
                     <div class="highlight">
                         <p><strong>核心观点：</strong></p>
@@ -481,9 +500,9 @@
         <div class="footer">
             <p><strong>📌 数据来源：</strong>虎嗅网、AIbase、InfoQ、机器之心、199IT</p>
             <p style="margin-top: 10px;">
-                <strong>📄 飞书文档：</strong>
-                <a href="https://feishu.cn/docx/YtdIdS2BQo1zBxx49GbcQua5nrh" target="_blank">
-                    https://feishu.cn/docx/YtdIdS2BQo1zBxx49GbcQua5nrh
+                <strong>📄 GitHub Pages：</strong>
+                <a href="https://jebanner.github.io/ai_daily_report/" target="_blank">
+                    https://jebanner.github.io/ai_daily_report/
                 </a>
             </p>
             <p style="margin-top: 10px;">
